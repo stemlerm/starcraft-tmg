@@ -2002,6 +2002,9 @@
       <categoryLinks>
         <categoryLink id="wrap-tc-zerg-cl01" name="Configuration" hidden="false" targetId="1b79-7735-d112-c67c" primary="true"/>
       </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="wrap-tc-zerg-cn01" type="max"/>
+      </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="ea30-5f6a-7b8c-9d01" name="Tactical Cards" hidden="false" collective="false" import="true">
           <selectionEntries>

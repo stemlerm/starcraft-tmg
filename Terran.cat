@@ -1354,6 +1354,9 @@
       <categoryLinks>
         <categoryLink id="wrap-tc-terran-cl01" name="Configuration" hidden="false" targetId="1b79-7735-d112-c67c" primary="true"/>
       </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="wrap-tc-terran-cn01" type="max"/>
+      </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="dd30-e2f3-a4b5-0601" name="Tactical Cards" hidden="false" collective="false" import="true">
           <selectionEntries>
