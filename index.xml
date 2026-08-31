@@ -4,9 +4,9 @@
     <repositoryUrl>https://raw.githubusercontent.com/stemlerm/starcraft-tmg/main/index.bsi</repositoryUrl>
   </repositoryUrls>
   <dataIndexEntries>
-    <dataIndexEntry filePath="StarCraft TMG.gstz" dataType="gamesystem" dataId="7bb8-cb2f-741d-4de2" dataName="StarCraft: The Miniatures Game" dataBattleScribeVersion="2.03" dataRevision="1"/>
-    <dataIndexEntry filePath="Terran.catz" dataType="catalogue" dataId="a1b2-c3d4-e5f6-7890" dataName="Terran" dataBattleScribeVersion="2.03" dataRevision="1"/>
-    <dataIndexEntry filePath="Zerg.catz" dataType="catalogue" dataId="b2c3-d4e5-f6a7-8901" dataName="Zerg" dataBattleScribeVersion="2.03" dataRevision="1"/>
-    <dataIndexEntry filePath="Protoss.catz" dataType="catalogue" dataId="c3d4-e5f6-a7b8-9012" dataName="Protoss" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="StarCraft TMG.gstz" dataType="gamesystem" dataId="7bb8-cb2f-741d-4de2" dataName="StarCraft: The Miniatures Game" dataBattleScribeVersion="2.03" dataRevision="2"/>
+    <dataIndexEntry filePath="Terran.catz" dataType="catalogue" dataId="a1b2-c3d4-e5f6-7890" dataName="Terran" dataBattleScribeVersion="2.03" dataRevision="2"/>
+    <dataIndexEntry filePath="Zerg.catz" dataType="catalogue" dataId="b2c3-d4e5-f6a7-8901" dataName="Zerg" dataBattleScribeVersion="2.03" dataRevision="2"/>
+    <dataIndexEntry filePath="Protoss.catz" dataType="catalogue" dataId="c3d4-e5f6-a7b8-9012" dataName="Protoss" dataBattleScribeVersion="2.03" dataRevision="2"/>
   </dataIndexEntries>
 </dataIndex>

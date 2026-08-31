@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7bb8-cb2f-741d-4de2" name="StarCraft: The Miniatures Game" revision="1" battleScribeVersion="2.03" authorName="Community" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7bb8-cb2f-741d-4de2" name="StarCraft: The Miniatures Game" revision="2" battleScribeVersion="2.03" authorName="Community" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>StarCraft: The Miniatures Game by Archon Studio (2026).
 Community-maintained BattleScribe data files.
 
