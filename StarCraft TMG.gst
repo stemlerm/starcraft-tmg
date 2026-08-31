@@ -77,10 +77,333 @@ Beta v1.4 rules.</readme>
           </constraints>
         </categoryLink>
         <categoryLink id="6290-c253-4047-893b" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-        <categoryLink id="a321-b699-0f0c-05a3" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false"/>
-        <categoryLink id="4ac6-f8b9-57cf-e915" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false"/>
-        <categoryLink id="dbd4-fa53-acc4-809b" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false"/>
-        <categoryLink id="d176-9f2d-58f5-33d9" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false"/>
+                <categoryLink id="a321-b699-0f0c-05a3" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-core-sk01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0603" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0604" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0605" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0606" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0607" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0609" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae09" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae04" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae09" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae0a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="4ac6-f8b9-57cf-e915" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-elite-sk01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0605" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0608" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae04" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="dbd4-fa53-acc4-809b" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-hero-sk01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="d176-9f2d-58f5-33d9" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-supp-sk01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0606" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
         <categoryLink id="0f77-e53d-162c-b5f1" name="Other" hidden="false" targetId="e46b-38b9-b37b-e9a0" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -97,10 +420,333 @@ Beta v1.4 rules.</readme>
           </constraints>
         </categoryLink>
         <categoryLink id="d56b-da65-c694-677a" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-        <categoryLink id="6154-d265-e0b3-6031" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false"/>
-        <categoryLink id="4d8d-f6f4-9d4f-c6cc" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false"/>
-        <categoryLink id="758c-746a-9ffb-a501" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false"/>
-        <categoryLink id="32bd-b6f7-c5ef-3b7d" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false"/>
+                <categoryLink id="6154-d265-e0b3-6031" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-core-st01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0603" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0604" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0605" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0606" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0607" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0609" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae09" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae04" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae09" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae0a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="4d8d-f6f4-9d4f-c6cc" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-elite-st01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0605" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0608" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae04" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="758c-746a-9ffb-a501" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-hero-st01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="32bd-b6f7-c5ef-3b7d" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-supp-st01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0606" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
         <categoryLink id="6fd2-7a32-1113-3a46" name="Other" hidden="false" targetId="e46b-38b9-b37b-e9a0" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -117,10 +763,333 @@ Beta v1.4 rules.</readme>
           </constraints>
         </categoryLink>
         <categoryLink id="7197-5043-4467-2116" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-        <categoryLink id="a76d-3fdc-1098-f241" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false"/>
-        <categoryLink id="c1a2-ecab-5bf7-41ec" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false"/>
-        <categoryLink id="8703-0e2a-4219-0351" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false"/>
-        <categoryLink id="235b-2d4b-2034-2293" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false"/>
+                <categoryLink id="a76d-3fdc-1098-f241" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-core-cu01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0603" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0604" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0605" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0606" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0607" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0609" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae09" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="3">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae04" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae09" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae0a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="c1a2-ecab-5bf7-41ec" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-elite-cu01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0605" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0608" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae04" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="8703-0e2a-4219-0351" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-hero-cu01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-060a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae07" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
+                <categoryLink id="235b-2d4b-2034-2293" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="slot-supp-cu01" type="max">
+              <modifiers>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee20-f2a3-b4c5-0602" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="2">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0601" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee30-f2a3-b4c5-0606" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae01" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae05" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="value" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg30-6a7b-8c9d-ae08" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </constraint>
+          </constraints>
+        </categoryLink>
         <categoryLink id="4d5d-9499-aff5-6e51" name="Other" hidden="false" targetId="e46b-38b9-b37b-e9a0" primary="false"/>
       </categoryLinks>
     </forceEntry>
