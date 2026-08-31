@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="c3d4-e5f6-a7b8-9012" name="Protoss" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="7bb8-cb2f-741d-4de2" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryLinks>
+    <categoryLink id="p0a1-23b4-c5d6-e7f1" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f2" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f3" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f4" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f5" name="Other" hidden="false" targetId="e46b-38b9-b37b-e9a0" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f6" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f7" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+    <categoryLink id="p0a1-23b4-c5d6-e7f8" name="Configuration" hidden="false" targetId="1b79-7735-d112-c67c" primary="false"/>
+  </categoryLinks>
+  <selectionEntries>
+    <!-- ======================== ZEALOT ======================== -->
+    <selectionEntry id="pa01-2c3d-4e5f-6a01" name="Zealot" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="pb01-3d4e-5f6a-7b01" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="747f-be51-cc00-74af" value="160"/>
+        <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+      </costs>
+      <profiles>
+        <profile id="pc01-4e5f-6a7b-8c01" name="Zealot" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">4/7</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">5+</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">5+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">4</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">3</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">6</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">3</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">2</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Biological, Light, Ground</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Psi Blades (no weapon upgrade, inline) -->
+        <profile id="pc01-4e5f-6a7b-8c02" name="Psi Blades" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">4</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">3+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Light (D3)</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Charge (free, always on) -->
+        <profile id="pc01-4e5f-6a7b-8c03" name="Charge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Charge roll 2D6, use higher + Speed.</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Devastating Charge (free, always on) -->
+        <profile id="pc01-4e5f-6a7b-8c04" name="Devastating Charge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">IMPACT (3) 4+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <!-- Zealot Optional Upgrades -->
+      <selectionEntries>
+        <selectionEntry id="pd01-6a7b-8c9d-ae01" name="My Life for Aiur" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="10"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc01-4e5f-6a7b-8c05" name="My Life for Aiur" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Each eligible model generates 1 additional IMPACT die.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="pd01-6a7b-8c9d-ae02" name="Leg Enhancements" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf03" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf04" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc01-4e5f-6a7b-8c06" name="Leg Enhancements" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">2&quot; Move action; doesn&apos;t count towards action limit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="pd01-6a7b-8c9d-ae03" name="Zealous Round" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf05" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf06" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="10"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc01-4e5f-6a7b-8c07" name="Zealous Round" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">0 PE</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">When not Activated and receives Damage, may count as Activated to reduce Total Damage by 2.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="pd01-6a7b-8c9d-ae04" name="We Stand as One" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf07" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe01-7b8c-9dae-bf08" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc01-4e5f-6a7b-8c08" name="We Stand as One" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Combat Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">If target Engaged with ≥1 other Friendly, CC Weapon gains PRECISION (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- ======================== PRAETOR GUARD (Zealot) ======================== -->
+    <selectionEntry id="pa02-2c3d-4e5f-6a02" name="Praetor Guard (Zealot)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe02-7b8c-9dae-bf01" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="pb02-3d4e-5f6a-7b02" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="747f-be51-cc00-74af" value="280"/>
+        <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+      </costs>
+      <profiles>
+        <profile id="pc02-4e5f-6a7b-8c01" name="Praetor Guard" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">4/7</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">5+</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">5+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">4</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">3</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">6</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">3</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">2</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Biological, Light, Ground, Unique</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Psi Blades (inline, no weapon upgrade) -->
+        <profile id="pc02-4e5f-6a7b-8c02" name="Psi Blades" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">4</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">3+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Light (D3)</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Abilities (all free/built-in) -->
+        <profile id="pc02-4e5f-6a7b-8c03" name="Shield Overcharge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">TOUGH (2) on first Armour Roll each Round.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc02-4e5f-6a7b-8c04" name="Leg Enhancements" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">2&quot; Move action; doesn&apos;t count towards action limit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc02-4e5f-6a7b-8c05" name="Charge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Charge roll 2D6, use higher + Speed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc02-4e5f-6a7b-8c06" name="Devastating Charge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">IMPACT (3) 4+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc02-4e5f-6a7b-8c07" name="Titan Killers" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Combat Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">When attacking target Size 3+, weapon Damage treated as 2.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc02-4e5f-6a7b-8c08" name="Precognition" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Combat Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Eligible to make Evade Roll against all attacks targeting it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <!-- ======================== ADEPT ======================== -->
+    <selectionEntry id="pa03-2c3d-4e5f-6a03" name="Adept" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="pb03-3d4e-5f6a-7b03" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="747f-be51-cc00-74af" value="150"/>
+        <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+      </costs>
+      <profiles>
+        <profile id="pc03-4e5f-6a7b-8c01" name="Adept" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">5/8</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">5+</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">5+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">3</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">2</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">4</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">4</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">1</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Biological, Light, Ground</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Glaive Cannon (ranged, no upgrade, inline) -->
+        <profile id="pc03-4e5f-6a7b-8c02" name="Glaive Cannon" hidden="false" typeId="f698-47b4-434e-68b3" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">8</characteristic>
+            <characteristic name="Target" typeId="846b-86ec-44fb-0f17">All</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">2</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">3+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Light (D3+1)</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3+1</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Psionic Presence (free, always on) -->
+        <profile id="pc03-4e5f-6a7b-8c03" name="Psionic Presence" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">All Weapons targeting Enemy Within 4&quot; of Shade token gain PRECISION (1).</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Psionic Transfer (free, always on) -->
+        <profile id="pc03-4e5f-6a7b-8c04" name="Psionic Transfer" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Shade token Within 12&quot;. End of Round: may teleport to Shade. DISPLACEMENT.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <!-- Adept Melee Weapon Selection (Strike default, Glaive Strike replaces) -->
+        <selectionEntryGroup id="pf03-5f6a-7b8c-9d01" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="pg03-6a7b-8c9d-ae01">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph03-7b8c-9dae-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph03-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="pg03-6a7b-8c9d-ae01" name="Strike" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+              </costs>
+              <profiles>
+                <profile id="pc03-4e5f-6a7b-8c05" name="Strike" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+                  <characteristics>
+                    <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+                    <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">1</characteristic>
+                    <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">4+</characteristic>
+                    <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+                    <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">-</characteristic>
+                    <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">-</characteristic>
+                    <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="pg03-6a7b-8c9d-ae02" name="Glaive Strike" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+              </costs>
+              <profiles>
+                <profile id="pc03-4e5f-6a7b-8c06" name="Glaive Strike" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+                  <characteristics>
+                    <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+                    <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">1</characteristic>
+                    <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">4+</characteristic>
+                    <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+                    <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Light (D3)</characteristic>
+                    <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3</characteristic>
+                    <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <!-- Adept Optional Upgrades -->
+      <selectionEntries>
+        <selectionEntry id="pd03-6a7b-8c9d-ae01" name="Resonating Glaives" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe03-7b8c-9dae-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe03-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc03-4e5f-6a7b-8c07" name="Resonating Glaives" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Glaive Cannon gains BUFF RoA (1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="pd03-6a7b-8c9d-ae02" name="Guidance" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe03-7b8c-9dae-bf03" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe03-7b8c-9dae-bf04" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="10"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc03-4e5f-6a7b-8c08" name="Guidance" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Glaive Cannon gains ANTI-EVADE (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- ======================== STALKER ======================== -->
+    <selectionEntry id="pa04-2c3d-4e5f-6a04" name="Stalker" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="pb04-3d4e-5f6a-7b04" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile id="pc04-4e5f-6a7b-8c01" name="Stalker" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">4/8</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">6+</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">4+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">6</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">3</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">4</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">2/3</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">1/2</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Armoured, Mechanical, Ground</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Particle Disruptors (ranged, no weapon upgrade, inline) -->
+        <profile id="pc04-4e5f-6a7b-8c02" name="Particle Disruptors" hidden="false" typeId="f698-47b4-434e-68b3" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">12</characteristic>
+            <characteristic name="Target" typeId="846b-86ec-44fb-0f17">All</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">4</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">3+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">2</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Armoured (D3)</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Stomp (melee, no weapon upgrade, inline) -->
+        <profile id="pc04-4e5f-6a7b-8c03" name="Stomp" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">2</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">5+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">-</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">-</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Squadron (free, always on) -->
+        <profile id="pc04-4e5f-6a7b-8c04" name="Squadron" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Horizontal Coherency 4&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Blink (free, always on) -->
+        <profile id="pc04-4e5f-6a7b-8c05" name="Blink" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">PLACE (6). Cannot set Within Engagement Range of Enemy.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <!-- Stalker Squad Size -->
+      <selectionEntryGroups>
+        <selectionEntryGroup id="pf04-5f6a-7b8c-9d01" name="Squad Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="pg04-6a7b-8c9d-ae01">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph04-7b8c-9dae-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph04-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="pg04-6a7b-8c9d-ae01" name="Small Squad (2 models)" hidden="false" collective="false" import="true" type="model">
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="170"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+              </costs>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph04-7b8c-9dae-bf03" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph04-7b8c-9dae-bf04" type="max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry id="pg04-6a7b-8c9d-ae02" name="Large Squad (3 models)" hidden="false" collective="false" import="true" type="model">
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="270"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+              </costs>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph04-7b8c-9dae-bf05" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph04-7b8c-9dae-bf06" type="max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <!-- Stalker Optional Upgrades -->
+      <selectionEntries>
+        <selectionEntry id="pd04-6a7b-8c9d-ae01" name="Path of Shadows" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe04-7b8c-9dae-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe04-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" field="747f-be51-cc00-74af" value="30">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="pg04-6a7b-8c9d-ae02" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="pc04-4e5f-6a7b-8c06" name="Path of Shadows" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Gain HIDDEN Status until next action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="pd04-6a7b-8c9d-ae02" name="Fury of the Nerazim" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe04-7b8c-9dae-bf03" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe04-7b8c-9dae-bf04" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" field="747f-be51-cc00-74af" value="30">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="pg04-6a7b-8c9d-ae02" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="pc04-4e5f-6a7b-8c07" name="Fury of the Nerazim" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">When attacking already-Activated Enemy, Particle Disruptors gain INSTANT.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- ======================== SENTRY ======================== -->
+    <selectionEntry id="pa05-2c3d-4e5f-6a05" name="Sentry" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="pb05-3d4e-5f6a-7b05" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="747f-be51-cc00-74af" value="130"/>
+        <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+      </costs>
+      <profiles>
+        <profile id="pc05-4e5f-6a7b-8c01" name="Sentry" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">4/7</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">6+</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">5+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">4</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">2</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">5</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">2</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">1</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Light, Mechanical, Psionic, Ground</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Disruption Beam (ranged, inline) -->
+        <profile id="pc05-4e5f-6a7b-8c02" name="Disruption Beam" hidden="false" typeId="f698-47b4-434e-68b3" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">8</characteristic>
+            <characteristic name="Target" typeId="846b-86ec-44fb-0f17">All</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">2</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">2+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">-</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">-</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Beam (melee, inline) -->
+        <profile id="pc05-4e5f-6a7b-8c03" name="Beam" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">2</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">3+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">-</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">-</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Abilities (free, always on) -->
+        <profile id="pc05-4e5f-6a7b-8c04" name="Restoration" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Friendly Within 4&quot; receives DEBUFF → remove all DEBUFFs.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc05-4e5f-6a7b-8c05" name="Force Field" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Force Field token Within 8&quot;. Size ≤2 cannot cross. Size 3+ remove it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc05-4e5f-6a7b-8c06" name="Guardian Shield" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Ranged Attacks vs Friendly Within 4&quot; get 1 fewer attack die.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <!-- Sentry Optional Upgrades -->
+      <selectionEntries>
+        <selectionEntry id="pd05-6a7b-8c9d-ae01" name="Solid-Field Projectors" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe05-7b8c-9dae-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe05-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="20"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc05-4e5f-6a7b-8c07" name="Solid-Field Projectors" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Additional Force Field (same rules).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="pd05-6a7b-8c9d-ae02" name="Hallucination" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe05-7b8c-9dae-bf03" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe05-7b8c-9dae-bf04" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="30"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc05-4e5f-6a7b-8c08" name="Hallucination" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">0 PE</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">When Enemy declares Ranged Attack vs Friendly Within 4&quot;, target gets Evade Roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- ======================== ARTANIS ======================== -->
+    <selectionEntry id="pa06-2c3d-4e5f-6a06" name="Artanis" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="pe06-7b8c-9dae-bf01" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="pb06-3d4e-5f6a-7b06" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="747f-be51-cc00-74af" value="250"/>
+        <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+      </costs>
+      <profiles>
+        <profile id="pc06-4e5f-6a7b-8c01" name="Artanis" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">7</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">5+</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">4+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">8</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">4</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">5</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">1</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">1</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Biological, Psionic, Ground, Unique</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Two melee weapon modes (inline, no upgrades) -->
+        <profile id="pc06-4e5f-6a7b-8c02" name="Twilight Blades Strike" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">2</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">2+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">3</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Armoured (D3)</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc06-4e5f-6a7b-8c03" name="Twilight Blades Sweep" hidden="false" typeId="10c3-393d-22a7-51ec" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="93a4-dc04-e0ca-d0b2">E</characteristic>
+            <characteristic name="RoA" typeId="ce1d-1b69-008a-8538">6</characteristic>
+            <characteristic name="Hit" typeId="4304-b5a9-e020-dc7b">2+</characteristic>
+            <characteristic name="Dmg" typeId="81cf-e26f-04d7-8fb8">1</characteristic>
+            <characteristic name="Surge" typeId="5b64-823c-ba6e-dd8e">Light (D3+1)</characteristic>
+            <characteristic name="S Dice" typeId="7cd0-6981-0e8e-b5fc">D3+1</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">-</characteristic>
+          </characteristics>
+        </profile>
+        <!-- Abilities (all free/built-in) -->
+        <profile id="pc06-4e5f-6a7b-8c04" name="Commander" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">+1 Supply for objectives/Disengage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc06-4e5f-6a7b-8c05" name="Phase Prism" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">When deploying from Reserves, PLACE (0) from another Friendly Unit. That Unit returns to Reserves. Activation ends.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc06-4e5f-6a7b-8c06" name="Hierarch&apos;s Stand" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Redirect Ranged Attack from Friendly Within 8&quot; to this Unit. Gets Evade Roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc06-4e5f-6a7b-8c07" name="Lightning Dash" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 PE</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">After successful Charge, declare second Charge vs different Enemy. Devastating Charge doesn&apos;t trigger twice.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc06-4e5f-6a7b-8c08" name="Devastating Charge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">IMPACT (6) 4+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <!-- ======================== PYLON ======================== -->
+    <selectionEntry id="pa07-2c3d-4e5f-6a07" name="Pylon" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="pg20-6a7b-8c9d-ae02" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="pb07-3d4e-5f6a-7b07" name="Other" hidden="false" targetId="e46b-38b9-b37b-e9a0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+        <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+      </costs>
+      <profiles>
+        <profile id="pc07-4e5f-6a7b-8c01" name="Pylon" hidden="false" typeId="c2f7-c37d-c027-a77b" typeName="Unit">
+          <characteristics>
+            <characteristic name="SPD" typeId="25be-234d-0485-163c">-</characteristic>
+            <characteristic name="EVA" typeId="31b2-5f65-457a-bd8a">-</characteristic>
+            <characteristic name="ARM" typeId="ac48-498e-9a22-6068">5+</characteristic>
+            <characteristic name="HP" typeId="f543-ab11-bfd5-d5e4">8</characteristic>
+            <characteristic name="Shield" typeId="5b57-d1d6-b930-1dca">2</characteristic>
+            <characteristic name="Size" typeId="3ece-f7d4-528b-de7c">3</characteristic>
+            <characteristic name="Models" typeId="6a55-111d-78aa-83ac">1</characteristic>
+            <characteristic name="Supply" typeId="c76b-15a9-c68b-fb39">0</characteristic>
+            <characteristic name="Keywords" typeId="8885-c823-299a-b150">Armoured, Ground</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc07-4e5f-6a7b-8c02" name="Structure" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Cannot Activate. Supply = 0. Cannot Control/Contest.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc07-4e5f-6a7b-8c03" name="Khalai Ingenuity" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once/Round, Friendly Within 4&quot; using PE ability → PE cost -1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="pc07-4e5f-6a7b-8c04" name="Warp Conduit" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+          <characteristics>
+            <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+            <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Passive</characteristic>
+            <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+            <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once/Round, deploy Ground Unit from Reserves using Pylon base as Entry Edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </selectionEntries>
+  <selectionEntryGroups>
+    <!-- ======================== FACTION CARDS ======================== -->
+    <selectionEntryGroup id="pf20-5f6a-7b8c-9d01" name="Faction Card" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph20-7b8c-9dae-bf01" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph20-7b8c-9dae-bf02" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <!-- Daelaam Faction Card -->
+        <selectionEntry id="pg20-6a7b-8c9d-ae01" name="Daelaam" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph20-7b8c-9dae-bf03" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb20-3d4e-5f6a-7b01" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc20-4e5f-6a7b-8c01" name="Daelaam" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Faction Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×3, Elite ×1, Support ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc20-4e5f-6a7b-8c02" name="Mass Recall" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once per Game. Set Faction Indicator anywhere. All Friendly Protoss Within 6&quot; returned to Reserves.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc20-4e5f-6a7b-8c03" name="Dae&apos;Uhl" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">When Friendly receives Damage → reduce Total Damage by 2 (min 1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- Khalai Faction Card -->
+        <selectionEntry id="pg20-6a7b-8c9d-ae02" name="Khalai" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph20-7b8c-9dae-bf04" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb20-3d4e-5f6a-7b02" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+          </costs>
+          <profiles>
+            <profile id="pc20-4e5f-6a7b-8c04" name="Khalai" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Faction Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×3, Hero ×1, Elite ×2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc20-4e5f-6a7b-8c05" name="Pylon Warp-In" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">If no Friendly Pylon on battlefield, set one anywhere on GROUND LEVEL, &gt;10&quot; from Enemy.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc20-4e5f-6a7b-8c06" name="Bound by the Khala" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">At end of active Unit&apos;s Activation, select another Friendly eligible to Activate → immediately Activate.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <!-- ======================== TACTICAL CARDS ======================== -->
+    <selectionEntryGroup id="pf30-5f6a-7b8c-9d01" name="Tactical Cards" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <!-- 1. Forge (NOT Unique, 30 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae01" name="Forge" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b01" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="30"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c01" name="Forge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Elite ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c02" name="Ground Weapons" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Ground Unit first Ranged Weapon gains CRITICAL HIT (1).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c03" name="Ground Armor" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Before Friendly Ground Armour Roll → TOUGH (1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 2. Gate Chronoboosted (Unique, 35 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae02" name="Gate Chronoboosted" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf01" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b02" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c04" name="Gate Chronoboosted" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Elite ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c05" name="Quick Strikes" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Combat Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit first CC Weapon gains PRECISION (2).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c06" name="Zealous Charge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit gains BUFF Speed (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 3. Gateway (NOT Unique, 25 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae03" name="Gateway" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b03" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c07" name="Gateway" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Core ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c08" name="Quick Strikes" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Combat Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit first CC Weapon gains PRECISION (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 4. Nexus (Unique, 35 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae04" name="Nexus" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf02" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b04" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c09" name="Nexus" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c0a" name="Ancient Pride" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit first Weapon gains INSTANT.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c0b" name="Strategic Recall" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unengaged Ground Unit returns to Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 5. Observer (Unique, 25 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae05" name="Observer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf03" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b05" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c0c" name="Observer" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Support ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c0d" name="Surveillance" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Faction Indicator anywhere. Enemy Within 6&quot; lose HIDDEN.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c0e" name="Gravitic Boosters" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">After Friendly Charge D6 → +1 Charge Distance.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 6. Overcharged Nexus (Unique, 35 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae06" name="Overcharged Nexus" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf04" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b06" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c0f" name="Overcharged Nexus" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Elite ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c10" name="Photon Overcharge" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">When Enemy enters via non-Entry Edge from Reserves → suffers HITS 3 (1).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c11" name="Strategic Recall" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unengaged Ground Unit returns to Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 7. Power Field (Unique, 40 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae07" name="Power Field" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf05" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b07" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c12" name="Power Field" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Hero ×1, Elite ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c13" name="Guardian Shell" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Before Friendly Ground Armour Roll → DODGE (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 8. Twilight Council (Unique, 45 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae08" name="Twilight Council" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf06" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b08" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="45"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c14" name="Twilight Council" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Elite ×1, Support ×1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c15" name="Weapons of the Firstborn" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Ground Unit first Ranged Weapon gains BUFF Range (4).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c16" name="Veil of Shadows" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">After Friendly resolves PLACE → HEAL (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 9. Warp Gate (Unique, 40 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae09" name="Warp Gate" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf07" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b09" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c17" name="Warp Gate" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c18" name="Quick Strikes" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Combat Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit first CC Weapon gains PRECISION (2).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c19" name="Warp In" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Ground Unit deploys from non-player edge, &gt;10&quot; from Enemy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <!-- 10. Warp Prism (Unique, 35 Gas, 1 CP) -->
+        <selectionEntry id="pg30-6a7b-8c9d-ae0a" name="Warp Prism" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ph30-7b8c-9dae-bf08" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="pb30-3d4e-5f6a-7b0a" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
+          </costs>
+          <profiles>
+            <profile id="pc30-4e5f-6a7b-8c1a" name="Warp Prism" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c1b" name="Phase" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit resolves PLACE (3).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="pc30-4e5f-6a7b-8c1c" name="Warp Conduit" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+              <characteristics>
+                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Faction Indicator &gt;10&quot; from Enemy. End of Round: Deploy Ground Unit from Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </selectionEntryGroups>
+</catalogue>
