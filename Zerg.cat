@@ -1,10 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="b2c3-d4e5-f6a7-8901" name="Zerg" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="7bb8-cb2f-741d-4de2" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryLinks>
-    <categoryLink id="a0b1-c2d3-e4f5-6701" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false"/>
-    <categoryLink id="a0b1-c2d3-e4f5-6702" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false"/>
-    <categoryLink id="a0b1-c2d3-e4f5-6703" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false"/>
-    <categoryLink id="a0b1-c2d3-e4f5-6704" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false"/>
+    <categoryLink id="a0b1-c2d3-e4f5-6701" name="Core" hidden="false" targetId="6d35-bbe1-4cbc-7508" primary="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="zslot-core-max-0001" type="max">
+          <modifiers>
+            <!-- Kerrigan's Swarm: Core +3 -->
+            <modifier type="increment" field="value" value="3">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Zerg Swarm: Core +3 -->
+            <modifier type="increment" field="value" value="3">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Evolution Chamber: Core +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae02" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Lair: Core +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Overlord: Core +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Roach Warren: Core +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae09" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Spawning Pool: Core +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0a" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Spawning Pool (Six Pool): Core +2 -->
+            <modifier type="increment" field="value" value="2">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae0b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </constraint>
+      </constraints>
+    </categoryLink>
+    <categoryLink id="a0b1-c2d3-e4f5-6702" name="Elite" hidden="false" targetId="5938-4cc1-3fab-ee84" primary="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="zslot-elite-max-0001" type="max">
+          <modifiers>
+            <!-- Kerrigan's Swarm: Elite +2 -->
+            <modifier type="increment" field="value" value="2">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Zerg Swarm: Elite +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Hydralisk Den: Elite +2 -->
+            <modifier type="increment" field="value" value="2">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae04" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Lair: Elite +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae05" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Overlord: Elite +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </constraint>
+      </constraints>
+    </categoryLink>
+    <categoryLink id="a0b1-c2d3-e4f5-6703" name="Hero" hidden="false" targetId="22c1-1d11-31f9-f3ba" primary="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="zslot-hero-max-0001" type="max">
+          <modifiers>
+            <!-- Kerrigan's Swarm: Hero +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae01" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Overlord: Hero +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae07" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </constraint>
+      </constraints>
+    </categoryLink>
+    <categoryLink id="a0b1-c2d3-e4f5-6704" name="Support" hidden="false" targetId="0463-9b77-f0f5-e5b0" primary="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="zslot-supp-max-0001" type="max">
+          <modifiers>
+            <!-- Zerg Swarm: Support +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa20-6a7b-8c9d-ae02" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Hatchery: Support +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae03" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <!-- Overseer: Support +1 -->
+            <modifier type="increment" field="value" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa30-6a7b-8c9d-ae08" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </constraint>
+      </constraints>
+    </categoryLink>
     <categoryLink id="a0b1-c2d3-e4f5-6705" name="Other" hidden="false" targetId="e46b-38b9-b37b-e9a0" primary="false"/>
     <categoryLink id="a0b1-c2d3-e4f5-6706" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
     <categoryLink id="a0b1-c2d3-e4f5-6707" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>

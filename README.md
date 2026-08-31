@@ -1,58 +1,88 @@
 # StarCraft: The Miniatures Game — BattleScribe Data
 
-Community-maintained [BattleScribe](https://battlescribe.net/) / [New Recruit](https://newrecruit.eu/app) data files for **StarCraft: The Miniatures Game** by Archon Studio (2026).
+Community-maintained [BattleScribe](https://battlescribe.net/) / [New Recruit](https://www.newrecruit.eu/) data files for **StarCraft: The Miniatures Game** by Archon Studio (2026).
 
-## Contents
+## Data Status
 
-- **3 factions**: Terran, Zerg, Protoss
-- **26 units** with full stat blocks, weapons, abilities, and upgrade options
-- **37 cards** (6 Faction Cards + 31 Tactical Cards)
-- **2 game sizes**: Skirmish (1000 Minerals) and Standard (2000 Minerals)
+| Faction | Units | Cards | Status |
+|---------|-------|-------|--------|
+| Terran | 7 | 12 (2 Faction + 10 Tactical) | ✅ Complete |
+| Zerg | 12 | 13 (2 Faction + 11 Tactical) | ✅ Complete |
+| Protoss | 7 | 12 (2 Faction + 10 Tactical) | ✅ Complete |
 
-## How to Use
+**Total: 26 units, 37 cards — Beta v1.4 rules.**
 
-### New Recruit (recommended)
+## How to Add This Repository
 
-1. Open [New Recruit](https://newrecruit.eu/app)
-2. Go to **Add or Remove games** → **Add from GitHub**
-3. Enter this repository URL
+### BattleScribe (Desktop/Mobile)
 
-### BattleScribe
+1. Open BattleScribe
+2. Go to **Manage Data** → **Add Data Source** → **Add Data Index URL**
+3. Enter: `https://raw.githubusercontent.com/stemlerm/starcraft-tmg/main/index.bsi`
+4. Tap/click **Confirm** → the data will download automatically
 
-1. Open BattleScribe → **Manage Data**
-2. **Import Data from URL** (desktop) or **Add data index URL** (mobile)
-3. Enter:
-   ```
-   https://github.com/<username>/starcraft-tmg/releases/latest/download/starcraft-tmg.latest.bsi
-   ```
+### New Recruit
 
-## Files
+1. Open New Recruit Editor or App
+2. Go to **Data** → **Import** → **From URL**
+3. Use the same URL as above
 
-| File | Description |
-|------|-------------|
-| `StarCraft TMG.gst` | Game system — cost types, profile types, categories, force entries |
-| `Terran.cat` | Terran faction — 7 units, 2 faction cards, 10 tactical cards |
-| `Zerg.cat` | Zerg faction — 12 units, 2 faction cards, 11 tactical cards |
-| `Protoss.cat` | Protoss faction — 7 units, 2 faction cards, 10 tactical cards |
+## What's Included
 
-## Game Version
+Each faction catalogue contains:
 
-Based on **Beta v1.4** rules. Data sourced from the official SC TMG app and [Stimpacked](https://stimpacked.com/) community tools.
+- Full unit stat blocks (SPD, EVA, ARM, HP, Shield, Size, Supply)
+- All ranged and melee weapon profiles
+- All abilities (with phase, type, cost, and description)
+- Paid upgrades with correct mineral costs (including squad-size-dependent pricing)
+- Squad size selection (Small/Large where applicable)
+- Faction Cards (exactly 1 required per army)
+- Tactical Cards (bought with Vespene Gas)
+- Unique constraints on heroes and unique cards
+- Faction-locked units (Raynor's Raider requires Raynor's Raiders faction card, etc.)
+- Category slot enforcement driven by faction and tactical card selection
 
-## Known Limitations
+## Game Sizes
 
-- Category slot enforcement (driven by Faction/Tactical Card selection) is partially modeled — slot descriptions are shown but not all constraints are dynamically enforced
-- Supply Pool escalation per round is a gameplay mechanic and cannot be modeled in BattleScribe
-- Psionic Energy / Biomass / CP resource tracking is not modeled (in-game resources, not army building)
+| Mode | Mineral Limit |
+|------|---------------|
+| Skirmish | 1,000 |
+| Standard | 2,000 |
+| Custom | No limit |
+
+## Army Building Basics
+
+1. Pick a **Faction Card** (exactly 1, free) — this defines your base category slots
+2. Buy **Tactical Cards** with Vespene Gas — each adds more category slots
+3. Fill your slots with **Units** paid in Minerals
+4. Add optional **Upgrades** to units (also paid in Minerals)
+
+## File Structure
+
+```
+StarCraft TMG.gst   — Game system (shared definitions)
+Terran.cat           — Terran faction catalogue
+Zerg.cat             — Zerg faction catalogue
+Protoss.cat          — Protoss faction catalogue
+index.xml            — Distribution manifest
+index.bsi            — Compressed manifest (for BattleScribe)
+```
+
+## Not Modeled (Gameplay Only)
+
+These are in-game mechanics, not army-building constraints:
+
+- Supply Pool escalation per round
+- CP / Biomass / Psionic Energy tracking
+- Creep / Burrowed / Hidden status effects
+- Mission card drafting
 
 ## Contributing
 
-Pull requests welcome! If you find incorrect stats, missing data, or have improvements:
+Found a bug or data error? Open an [issue](https://github.com/stemlerm/starcraft-tmg/issues) or submit a PR.
 
-1. Fork this repo
-2. Edit the `.gst` / `.cat` files (XML) or use the [New Recruit Editor](https://www.newrecruit.eu/download/)
-3. Submit a PR
+Data sourced from the [Stimpacked](https://stimpacked.com/) community tools and the official SC TMG app.
 
-## Legal
+## Disclaimer
 
-Game data is property of Archon Studio / Blizzard Entertainment. This is an unofficial, fan-made tool for personal use. Not affiliated with or endorsed by Archon Studio or Blizzard Entertainment.
+This is an unofficial, fan-made data repository. StarCraft is a trademark of Blizzard Entertainment. StarCraft: The Miniatures Game is published by Archon Studio. All game data is property of its respective owners. This project is not affiliated with or endorsed by Blizzard Entertainment or Archon Studio.
