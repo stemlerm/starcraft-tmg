@@ -1251,445 +1251,461 @@
         </profile>
       </profiles>
     </selectionEntry>
-  </selectionEntries>
-  <selectionEntryGroups>
-    <!-- ======================== FACTION CARDS ======================== -->
-    <selectionEntryGroup id="dd20-e2f3-a4b5-0601" name="Faction Card" hidden="false" collective="false" import="true">
+    <!-- Faction Card wrapper -->
+    <selectionEntry id="wrap-fc-terran-0001" name="Faction Card" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="wrap-fc-terran-cl01" name="Configuration" hidden="false" targetId="1b79-7735-d112-c67c" primary="true"/>
+      </categoryLinks>
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0601" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0602" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="wrap-fc-terran-cn01" type="min"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="wrap-fc-terran-cn02" type="max"/>
       </constraints>
-      <selectionEntries>
-        <!-- Raynor's Raiders Faction Card -->
-        <selectionEntry id="ee20-f2a3-b4c5-0601" name="Raynor&apos;s Raiders" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dd20-e2f3-a4b5-0601" name="Faction Card" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0603" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0601" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0602" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="bb20-c2d3-e4f5-0601" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
-          </costs>
-          <profiles>
-            <profile id="cc20-d2e3-f4a5-0601" name="Raynor&apos;s Raiders" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Faction Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×3, Hero ×1, Support ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc20-d2e3-f4a5-0602" name="Rapid Ingress" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Friendly PDD anywhere, &gt;1&quot; from Enemy. Remove at End of Round.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc20-d2e3-f4a5-0603" name="Ready for Pickup?" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once per Game. Active Unit PLACE (12). No Within Engagement Range of Enemy.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- Terran Armed Forces Faction Card -->
-        <selectionEntry id="ee20-f2a3-b4c5-0602" name="Terran Armed Forces" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0604" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb20-c2d3-e4f5-0602" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
-          </costs>
-          <profiles>
-            <profile id="cc20-d2e3-f4a5-0604" name="Terran Armed Forces" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Faction Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×3, Elite ×1, Support ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc20-d2e3-f4a5-0605" name="Tactical Retreat" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit ignores Disengage penalty for remainder of Round.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc20-d2e3-f4a5-0606" name="Terran Tenacity" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once per Game. Claim First Player Marker. No other player may claim it.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <!-- ======================== TACTICAL CARDS ======================== -->
-    <selectionEntryGroup id="dd30-e2f3-a4b5-0601" name="Tactical Cards" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <!-- 1. Academy (Unique, 35 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0601" name="Academy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0601" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0601" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0601" name="Academy" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Support ×2.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0602" name="Advanced Training" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once/Round, Friendly Support ability CP cost -1 (min 0). Do not Exhaust.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 2. Armory (NOT Unique, 30 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0602" name="Armory" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0602" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="30"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0603" name="Armory" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Elite ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0604" name="Vehicle Weapons" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Mechanical Unit&apos;s first Ranged Weapon gains CRITICAL HIT (1).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0605" name="Vehicle Plating" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Before Friendly Mechanical Armour Roll → TOUGH (1).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 3. Barracks (NOT Unique, 25 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0603" name="Barracks" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0603" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0606" name="Barracks" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Core ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0607" name="Go! Go! Go!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio Unit performs 2&quot; Move (not counted as action).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 4. Barracks (Proxy) (Unique, 40 Gas, 2 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0604" name="Barracks (Proxy)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0602" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0604" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0608" name="Barracks (Proxy)" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">2 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×2.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0609" name="Go! Go! Go!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio 2&quot; Move.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-060a" name="Armed and Ready" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio deploys from non-player edge, &gt;10&quot; from Enemy. Once per Round.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 5. Barracks (Tech Lab) (Unique, 45 Gas, 2 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0605" name="Barracks (Tech Lab)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0603" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0605" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="45"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-060b" name="Barracks (Tech Lab)" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">2 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Elite ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-060c" name="Go! Go! Go!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio 2&quot; Move.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-060d" name="Let&apos;s Have a Blast!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio first Ranged Weapon gains ANTI-EVADE (1).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 6. Dropship (Unique, 40 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0606" name="Dropship" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0604" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0606" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-060e" name="Dropship" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Support ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-060f" name="Strap in!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unengaged Ground Unit returns to Reserves.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0610" name="Ready For Dust-off" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Faction Indicator &gt;10&quot; from Enemy. End of Round: Deploy Ground Unit from Reserves in contact.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 7. Engineering Bay (NOT Unique, 25 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0607" name="Engineering Bay" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0607" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0611" name="Engineering Bay" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Core ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0612" name="Infantry Weapons" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio first Ranged Weapon gains CRITICAL HIT (1).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0613" name="Infantry Armor" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Before Friendly Bio Armour Roll → TOUGH (1).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 8. Factory (NOT Unique, 35 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0608" name="Factory" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0608" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0614" name="Factory" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Elite ×2.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0615" name="Field Repair" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Mechanical Unit resolves HEAL (2).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 9. Orbital Command (Unique, 25 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-0609" name="Orbital Command" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0605" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-0609" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0616" name="Orbital Command" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0617" name="ComSat Station" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Select non-player table edge → Enemy cannot Deploy from it this Round.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-0618" name="Scanner Sweep" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Faction Indicator. Enemy Within 6&quot; lose HIDDEN.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <!-- 10. Supply Depot (Unique, 40 Gas, 1 CP) -->
-        <selectionEntry id="ee30-f2a3-b4c5-060a" name="Supply Depot" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0606" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bb30-c2d3-e4f5-060a" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
-            <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
-          </costs>
-          <profiles>
-            <profile id="cc30-d2e3-f4a5-0619" name="Supply Depot" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Hero ×1, Elite ×1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cc30-d2e3-f4a5-061a" name="Additional Supply Depots" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
-              <characteristics>
-                <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
-                <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
-                <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
-                <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit Supply +1 for objectives.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </selectionEntryGroups>
+          <selectionEntries>
+            <!-- Raynor's Raiders Faction Card -->
+            <selectionEntry id="ee20-f2a3-b4c5-0601" name="Raynor&apos;s Raiders" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0603" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb20-c2d3-e4f5-0601" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+              </costs>
+              <profiles>
+                <profile id="cc20-d2e3-f4a5-0601" name="Raynor&apos;s Raiders" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Faction Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×3, Hero ×1, Support ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc20-d2e3-f4a5-0602" name="Rapid Ingress" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Friendly PDD anywhere, &gt;1&quot; from Enemy. Remove at End of Round.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc20-d2e3-f4a5-0603" name="Ready for Pickup?" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once per Game. Active Unit PLACE (12). No Within Engagement Range of Enemy.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- Terran Armed Forces Faction Card -->
+            <selectionEntry id="ee20-f2a3-b4c5-0602" name="Terran Armed Forces" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff20-a2b3-c4d5-0604" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb20-c2d3-e4f5-0602" name="Faction Card" hidden="false" targetId="c4c4-2d74-825f-2091" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="0"/>
+              </costs>
+              <profiles>
+                <profile id="cc20-d2e3-f4a5-0604" name="Terran Armed Forces" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Faction Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×3, Elite ×1, Support ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc20-d2e3-f4a5-0605" name="Tactical Retreat" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit ignores Disengage penalty for remainder of Round.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc20-d2e3-f4a5-0606" name="Terran Tenacity" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once per Game. Claim First Player Marker. No other player may claim it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <!-- Tactical Cards wrapper -->
+    <selectionEntry id="wrap-tc-terran-0001" name="Tactical Cards" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="wrap-tc-terran-cl01" name="Configuration" hidden="false" targetId="1b79-7735-d112-c67c" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dd30-e2f3-a4b5-0601" name="Tactical Cards" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <!-- 1. Academy (Unique, 35 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0601" name="Academy" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0601" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0601" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0601" name="Academy" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Support ×2.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0602" name="Advanced Training" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Once/Round, Friendly Support ability CP cost -1 (min 0). Do not Exhaust.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 2. Armory (NOT Unique, 30 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0602" name="Armory" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0602" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="30"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0603" name="Armory" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Elite ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0604" name="Vehicle Weapons" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Mechanical Unit&apos;s first Ranged Weapon gains CRITICAL HIT (1).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0605" name="Vehicle Plating" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Before Friendly Mechanical Armour Roll → TOUGH (1).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 3. Barracks (NOT Unique, 25 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0603" name="Barracks" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0603" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0606" name="Barracks" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Core ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0607" name="Go! Go! Go!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio Unit performs 2&quot; Move (not counted as action).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 4. Barracks (Proxy) (Unique, 40 Gas, 2 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0604" name="Barracks (Proxy)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0602" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0604" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0608" name="Barracks (Proxy)" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">2 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×2.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0609" name="Go! Go! Go!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio 2&quot; Move.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-060a" name="Armed and Ready" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio deploys from non-player edge, &gt;10&quot; from Enemy. Once per Round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 5. Barracks (Tech Lab) (Unique, 45 Gas, 2 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0605" name="Barracks (Tech Lab)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0603" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0605" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="45"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-060b" name="Barracks (Tech Lab)" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">2 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Elite ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-060c" name="Go! Go! Go!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio 2&quot; Move.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-060d" name="Let&apos;s Have a Blast!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio first Ranged Weapon gains ANTI-EVADE (1).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 6. Dropship (Unique, 40 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0606" name="Dropship" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0604" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0606" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-060e" name="Dropship" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Support ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-060f" name="Strap in!" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unengaged Ground Unit returns to Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0610" name="Ready For Dust-off" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Faction Indicator &gt;10&quot; from Enemy. End of Round: Deploy Ground Unit from Reserves in contact.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 7. Engineering Bay (NOT Unique, 25 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0607" name="Engineering Bay" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0607" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0611" name="Engineering Bay" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Core ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0612" name="Infantry Weapons" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Assault Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Bio first Ranged Weapon gains CRITICAL HIT (1).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0613" name="Infantry Armor" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Any Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Reaction</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Before Friendly Bio Armour Roll → TOUGH (1).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 8. Factory (NOT Unique, 35 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0608" name="Factory" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0608" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="35"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0614" name="Factory" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Slots: Elite ×2.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0615" name="Field Repair" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Mechanical Unit resolves HEAL (2).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 9. Orbital Command (Unique, 25 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-0609" name="Orbital Command" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0605" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-0609" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="25"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0616" name="Orbital Command" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0617" name="ComSat Station" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Select non-player table edge → Enemy cannot Deploy from it this Round.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-0618" name="Scanner Sweep" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Set Faction Indicator. Enemy Within 6&quot; lose HIDDEN.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <!-- 10. Supply Depot (Unique, 40 Gas, 1 CP) -->
+            <selectionEntry id="ee30-f2a3-b4c5-060a" name="Supply Depot" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff30-a2b3-c4d5-0606" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb30-c2d3-e4f5-060a" name="Tactical Card" hidden="false" targetId="2c96-e743-92b9-cd86" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Minerals" typeId="747f-be51-cc00-74af" value="0"/>
+                <cost name="Gas" typeId="9578-1e77-5eed-99b0" value="40"/>
+              </costs>
+              <profiles>
+                <profile id="cc30-d2e3-f4a5-0619" name="Supply Depot" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">-</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Tactical Card</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">1 CP</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Unique. Slots: Core ×1, Hero ×1, Elite ×1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cc30-d2e3-f4a5-061a" name="Additional Supply Depots" hidden="false" typeId="c410-1cf6-dc62-15ed" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Phase" typeId="655b-19be-71db-a073">Movement Phase</characteristic>
+                    <characteristic name="Type" typeId="7de9-e5bb-c0b5-75de">Active</characteristic>
+                    <characteristic name="Cost" typeId="39ad-f387-baaa-f2ff">-</characteristic>
+                    <characteristic name="Description" typeId="da54-8896-c94d-3caf">Active Unit Supply +1 for objectives.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
